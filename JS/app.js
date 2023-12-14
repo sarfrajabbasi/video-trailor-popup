@@ -31,11 +31,11 @@ const IMG = createEl("img");
 IMG.src =
   "https://images.pexels.com/photos/3062542/pexels-photo-3062542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
 IMG.alt = "movie-image";
-const movieName = createEl("h2");
+const movieName = createEl("h1");
 movieName.textContent = "movie Title";
 
 const para = createEl("p");
-para.innerHTML = generaterandomWords(1000);
+para.innerHTML = generaterandomWords(100);
 
 const btn = createEl('button');
 btn.classList.add('btn')
@@ -43,7 +43,7 @@ btn.textContent = 'Watch now';
 
 // trailer
 const trailer = createEl('div');
-btn.classList.add('trailer-container');
+trailer.classList.add('trailer-container');
 
 const video = createEl('video');
 video.src = "./video/pexels-sunsetoned-5968893 (2160p).mp4";
