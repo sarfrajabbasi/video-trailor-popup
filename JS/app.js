@@ -41,13 +41,23 @@ const btn = createEl('button');
 btn.classList.add('btn')
 btn.textContent = 'Watch now';
 
-const tariler = createEl('div');
+// trailer
+const trailer = createEl('div');
 btn.classList.add('trailer-container');
+
 const video = createEl('video');
-video.src = ''
+video.src = "./video/pexels-sunsetoned-5968893 (2160p).mp4";
+video.setAttribute('controls','true');
+
+const close1 = createEl('i');
+const classToAdd = 'fas fa-times fa-2x' 
+close1.classList.add(...classToAdd.split(' '))
 
 // append
+trailer.append(video,close1);
 MAINCONTAINER.append(IMG,movieName,para,btn);
 
-document.body.appendChild(MAINCONTAINER);
+document.body.append(MAINCONTAINER,trailer);
 
+// log
+console.log(close1);
