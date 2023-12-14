@@ -47,12 +47,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: opacity 0.7s;
 }
 .trailer-container video{
     position: relative;
     max-width: 600px;
     outline: none;
     height: 100%;
+}
+.close-icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.active{
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* responsive */
