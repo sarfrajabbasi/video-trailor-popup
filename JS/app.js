@@ -37,7 +37,17 @@ movieName.textContent = "movie Title";
 const para = createEl("p");
 para.innerHTML = generaterandomWords(1000);
 
-// append
-MAINCONTAINER.appendChild(IMG);
+const btn = createEl('button');
+btn.classList.add('btn')
+btn.textContent = 'Watch now';
 
-document.body.append(MAINCONTAINER, movieName, para);
+const tariler = createEl('div');
+btn.classList.add('trailer-container');
+const video = createEl('video');
+video.src = ''
+
+// append
+MAINCONTAINER.append(IMG,movieName,para,btn);
+
+document.body.appendChild(MAINCONTAINER);
+

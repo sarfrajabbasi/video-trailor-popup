@@ -1,0 +1,11 @@
+img{
+    width: 100%;
+}
+ 
+.main-container{
+    border: 1px solid red;
+}
+p,h2{
+    padding: 10px;
+    margin: 0 auto;
+}
